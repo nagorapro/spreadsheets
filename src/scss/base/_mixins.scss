@@ -1,0 +1,39 @@
+// font-face
+@mixin font-face(
+  $font,
+  $path,
+  $weight: normal,
+  $style: normal
+  ) {
+  @font-face {
+    font-family: $font;
+    src: url("#{$path}.woff2") format("woff2");
+    src: url("#{$path}.woff") format("woff");
+    src: url("#{$path}.ttf") format("ttf");
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+// button
+@mixin btn($color: #1aa85d) {
+  display: inline-block;
+  position: relative;
+  height: 24px;
+  min-width: 24px;
+  padding: 4px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  transition: all 0.5s;
+  & span {
+    font-size: 18px;
+  }
+  &:hover {
+    background: #eee;
+  }
+  &:active,
+  &.active {
+    color: $color;
+    transform: scale(0.9);
+  }
+}

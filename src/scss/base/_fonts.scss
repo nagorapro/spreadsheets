@@ -1,0 +1,40 @@
+// Open Sans 300
+@include font-face("Open Sans", "../assets/fonts/OpenSans/OpenSans-Light");
+// Open Sans 400
+@include font-face("Open Sans", "../assets/fonts/OpenSans/OpenSans-Regular");
+// Open Sans 700
+@include font-face("Open Sans", "../assets/fonts/OpenSans/OpenSans-Bold");
+
+// MaterialIcons 400
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Material Icons");
+  src: local("MaterialIcons-Regular");
+  src: url(../assets/fonts/MaterialIcons/MaterialIcons-Regular.woff2) format("woff2");
+  src: url(../assets/fonts/MaterialIcons/MaterialIcons-Regular.woff) format("woff");
+  src: url(../assets/fonts/MaterialIcons/MaterialIcons-Regular.ttf) format("truetype");
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}

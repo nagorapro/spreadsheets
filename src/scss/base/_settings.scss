@@ -1,0 +1,16 @@
+// settings
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background: $info-color;
+  padding-bottom: $row-height;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  
+  @media (min-width: $lg) {
+    padding-bottom: 0;
+  }
+}
